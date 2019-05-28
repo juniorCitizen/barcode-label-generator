@@ -13,7 +13,7 @@
     <br>
     <img class="barcode"
          jsbarcode-format="code128"
-         jsbarcode-value="GT-9403D-4"
+         jsbarcode-value="GT-9403D-4H-KD"
          jsbarcode-displayValue="true"
          jsbarcode-textmargin="0"
          jsbarcode-fontoptions="bold"
@@ -41,7 +41,7 @@
     <br>
     <div class="label-text">GENTRY HARDWARE PRODUCTS CO., LTD.</div>
     <div class="label-text">PRODUCT: ALUM. IV STAND</div>
-    <div class="label-text">REF: GT-9403D-4</div>
+    <div class="label-text">REF: GT-9403D-4H-KD</div>
     <div class="label-text">LOT: {{ lotNumber }}</div>
     <br>
     <div class="label-text">NO SPECIAL STORAGE REQUIREMENTS</div>
