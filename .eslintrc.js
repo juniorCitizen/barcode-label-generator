@@ -1,44 +1,28 @@
 module.exports = {
   root: true,
   env: {
-    es6: true,
-    browser: true,
     node: true,
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-    ecmaVersion: 2017,
-    souceType: 'module',
-  },
-  extends: ['plugin:vue/recommended', '@vue/prettier'],
+  extends: ['eslint:recommended', 'plugin:vue/recommended', '@vue/standard'],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 80,
-        tabWidth: 2,
-        useTabs: false,
-        semi: false,
-        singleQuote: true,
-        trailingComma: 'es5',
-        bracketSpacing: false,
-        jsxBracketSameLine: true,
-        arrowParens: 'avoid',
-        // parser: 'babylon',
-        proseWrap: 'never',
-      },
-    ],
     'vue/max-attributes-per-line': [
-      'error',
+      2,
       {
         singleline: 1,
         multiline: {
           max: 1,
-          allowFirstLine: true,
+          allowFirstLine: false,
         },
       },
     ],
+    'comma-dangle': ['error', 'always-multiline'],
+    semi: ['error', 'never'],
+    'space-before-function-paren': ['error', 'never'],
+    'object-curly-spacing': ['error', 'never'],
+    'array-bracket-spacing': ['error', 'never'],
+    'computed-property-spacing': ['error', 'never'],
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
   },
 }

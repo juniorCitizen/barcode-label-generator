@@ -2,20 +2,25 @@
   <div id="app">
     <label-mockup/>
     <br>
-    <input v-if="!errorMessage"
-           v-model="inputValue"
-           class="input"
-           type="text"
-           placeholder="Lot Number">
+    <input
+      v-if="!errorMessage"
+      v-model="inputValue"
+      class="input"
+      type="text"
+      placeholder="Lot Number">
     &nbsp;
-    <button v-if="inputValue!==''&&!errorMessage"
-            class="button"
-            @click="saveLabelToImage()">
+    <button
+      v-if="inputValue!==''&&!errorMessage"
+      class="button"
+      @click="saveLabelToImage()"
+    >
       save label image
     </button>
     <br>
-    <div v-if="errorMessage"
-         class="error-message">{{ errorMessage }}</div>
+    <div
+      v-if="errorMessage"
+      class="error-message">{{ errorMessage }}
+    </div>
   </div>
 </template>
 

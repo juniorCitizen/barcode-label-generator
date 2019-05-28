@@ -1,42 +1,47 @@
 <template>
   <div id="label-mockup">
-    <img class="barcode"
-         jsbarcode-format="code128"
-         jsbarcode-value="GENTRY HARDWARE"
-         jsbarcode-displayValue="true"
-         jsbarcode-textmargin="0"
-         jsbarcode-fontoptions="bold"
-         jsbarcode-height="60"
-         jsbarcode-textAlign="left"
-         jsbarcode-width="2"
-         jsbarcode-background="">
+    <img
+      class="barcode"
+      jsbarcode-format="code128"
+      jsbarcode-value="GENTRY HARDWARE"
+      jsbarcode-displayValue="true"
+      jsbarcode-textmargin="0"
+      jsbarcode-fontoptions="bold"
+      jsbarcode-height="60"
+      jsbarcode-textAlign="left"
+      jsbarcode-width="2"
+      jsbarcode-background
+    >
     <br>
-    <img class="barcode"
-         jsbarcode-format="code128"
-         jsbarcode-value="GT-9403D-4H-KD"
-         jsbarcode-displayValue="true"
-         jsbarcode-textmargin="0"
-         jsbarcode-fontoptions="bold"
-         jsbarcode-height="60"
-         jsbarcode-textAlign="left"
-         jsbarcode-width="2"
-         jsbarcode-background="">
+    <img
+      class="barcode"
+      jsbarcode-format="code128"
+      jsbarcode-value="GT-9403D-4H-KD"
+      jsbarcode-displayValue="true"
+      jsbarcode-textmargin="0"
+      jsbarcode-fontoptions="bold"
+      jsbarcode-height="60"
+      jsbarcode-textAlign="left"
+      jsbarcode-width="2"
+      jsbarcode-background
+    >
     <br>
-    <img v-if="lotNumber"
-         :jsbarcode-value="lotNumber"
-         class="barcode"
-         jsbarcode-format="code128"
-         jsbarcode-displayValue="true"
-         jsbarcode-textmargin="0"
-         jsbarcode-fontoptions="bold"
-         jsbarcode-height="60"
-         jsbarcode-textAlign="left"
-         jsbarcode-width="2"
-         jsbarcode-background="">
-    <div v-else
-         class="warning-text">
-      Lot number is empty
-    </div>
+    <img
+      v-if="lotNumber"
+      :jsbarcode-value="lotNumber"
+      class="barcode"
+      jsbarcode-format="code128"
+      jsbarcode-displayValue="true"
+      jsbarcode-textmargin="0"
+      jsbarcode-fontoptions="bold"
+      jsbarcode-height="60"
+      jsbarcode-textAlign="left"
+      jsbarcode-width="2"
+      jsbarcode-background
+    >
+    <div
+      v-else
+      class="warning-text">Lot number is empty</div>
     <br>
     <br>
     <div class="label-text">GENTRY HARDWARE PRODUCTS CO., LTD.</div>
