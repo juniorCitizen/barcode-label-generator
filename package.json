@@ -35,6 +35,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit --skipLibCheck && vite build",
-    "serve": "vite preview"
+    "preview": "vite preview"
   }
 }
