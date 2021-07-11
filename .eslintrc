@@ -11,26 +11,12 @@
     "parser": "@typescript-eslint/parser",
     "sourceType": "module"
   },
-  "plugins": [
-    "vue",
-    "@typescript-eslint"
-  ],
+  "plugins": ["vue", "@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-recommended",
     "prettier"
   ],
-  "rules": {
-    "vue/max-attributes-per-line": [
-      2,
-      {
-        "singleline": 1,
-        "multiline": {
-          "max": 1,
-          "allowFirstLine": false
-        }
-      }
-    ]
-  }
+  "rules": {}
 }
