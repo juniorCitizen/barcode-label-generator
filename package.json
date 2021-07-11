@@ -1,6 +1,7 @@
 {
   "name": "barcode-label-generator",
   "version": "2.0.0",
+  "author": "juniorCitizen <juniorcitizen1978@gmail.com>",
   "private": true,
   "dependencies": {
     "file-saver": "^2.0.5",
